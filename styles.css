@@ -1,0 +1,168 @@
+body {
+    font-family: papyrus, Arial, sans-serif;
+    margin: 0;
+    background-color: #631373;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #4e2c6e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar form {
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c4eb45;
+}
+
+.sidebar input {
+    width: calc(100% - 22px);
+    /* Adjust for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #c4eb45;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px 18px;
+    background-color: #5548a3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    background-color: #39bed8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #b21919;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c4eb45;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #c4eb45;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #5548a3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #39bed8;
+}
+
+#resetButton {
+    background-color: #ff6f61;
+}
+
+#resetButton:hover {
+    background-color: #ff3f31;
+}
+
+#encryptedMessage,
+#decryptedMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c4eb45;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+        min-height: 300px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+        /* Reduce font size for headings */
+    }
+
+    .sidebar form {
+        margin-bottom: 15px;
+        /* Adjust form margin */
+    }
+
+    .sidebar input[type="text"],
+    .sidebar input[type="password"],
+    .sidebar button {
+        padding: 8px;
+        /* Adjust input and button padding */
+        font-size: 14px;
+        /* Reduce font size for inputs and buttons */
+    }
+}
+
+button.copy {
+    background-color: #4CAF50;
+    /* Green background */
+}
+
+button.copy:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
