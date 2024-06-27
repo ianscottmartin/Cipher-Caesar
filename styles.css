@@ -36,6 +36,7 @@ body {
 
 .sidebar input {
     width: calc(100% - 22px);
+    /* Adjust for padding and border */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -127,8 +128,8 @@ button:hover {
         margin: 20px auto;
         padding: 15px;
         min-height: 300px;
-        margin-bottom: 120px;
-        /* Adjust margin-bottom to account for the sidebar height */
+        margin-bottom: 200px;
+        /* Ensure this is at least as tall as the sidebar */
     }
 
     .sidebar {
@@ -136,9 +137,10 @@ button:hover {
         height: auto;
         position: fixed;
         bottom: 0;
+        left: 0;
         padding: 15px;
-        background-color: #4e2c6e;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     }
 
     .sidebar h2 {
