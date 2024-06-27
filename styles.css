@@ -135,12 +135,11 @@ button:hover {
     .sidebar {
         width: 100%;
         height: auto;
-        position: fixed;
-        bottom: 0;
-        left: 0;
+        position: relative;
         padding: 15px;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
         z-index: 10;
+        bottom: 0;
     }
 
     .sidebar h2 {
@@ -156,5 +155,10 @@ button:hover {
     .sidebar button {
         padding: 8px;
         font-size: 14px;
+    }
+
+    body {
+        padding-bottom: 250px;
+        /* Ensure enough space for the sidebar */
     }
 }
