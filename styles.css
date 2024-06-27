@@ -16,6 +16,7 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     color: #fff;
+    transition: all 0.3s ease;
 }
 
 .sidebar h2 {
@@ -132,37 +133,30 @@ button:hover {
     .sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: static;
         padding: 15px;
-        /* Adjust padding for smaller screens */
+        background-color: #4e2c6e;
     }
 
     .sidebar h2 {
         font-size: 18px;
-        /* Reduce font size for headings */
     }
 
     .sidebar form {
         margin-bottom: 15px;
-        /* Adjust form margin */
     }
 
     .sidebar input[type="text"],
     .sidebar input[type="password"],
     .sidebar button {
         padding: 8px;
-        /* Adjust input and button padding */
         font-size: 14px;
-        /* Reduce font size for inputs and buttons */
     }
-}
 
-button.copy {
-    background-color: #4CAF50;
-    /* Green background */
-}
-
-button.copy:hover {
-    background-color: #45a049;
-    /* Darker green on hover */
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
 }

@@ -31,29 +31,23 @@ function getRandomLetter() {
   return letters.charAt(Math.floor(Math.random() * letters.length));
 }
 
-// Function to encrypt a message using Caesar Cipher with a shift value of 42 and add a random letter after every 2 letters
+// Function to encrypt a message using Caesar Cipher with a shift value of 42 and add a random letter as the first letter
 function encryptMessage(message) {
   const shiftValue = 42;
-  let encryptedMessage = '';
+  let encryptedMessage = getRandomLetter(); // Add a random letter as the first letter
 
   for (let i = 0; i < message.length; i++) {
     encryptedMessage += caesarCipher(message[i], shiftValue, true);
-    if ((i + 1) % 2 === 0) {
-      encryptedMessage += getRandomLetter(); // Add a random letter after every 2 letters
-    }
   }
   return encryptedMessage;
 }
 
-// Function to decrypt a message using Caesar Cipher with a shift value of 42 and ignore random letters added during encryption
+// Function to decrypt a message using Caesar Cipher with a shift value of 42 and ignore the first random letter
 function decryptMessage(encryptedMessage) {
   const shiftValue = 42;
   let decryptedMessage = '';
 
-  for (let i = 0; i < encryptedMessage.length; i++) {
-    if (i % 3 === 2) {
-      continue; // Skip the random letters added during encryption
-    }
+  for (let i = 1; i < encryptedMessage.length; i++) {
     decryptedMessage += caesarCipher(encryptedMessage[i], shiftValue, false);
   }
 
